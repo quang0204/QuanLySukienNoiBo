@@ -1,0 +1,797 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+:root {
+    --black: #000;
+    --gray-900: #111;
+    --gray-800: #1e1e1e;
+    --gray-700: #2d2d2d;
+    --gray-600: #404040;
+    --gray-500: #737373;
+    --gray-400: #a3a3a3;
+    --gray-300: #d4d4d4;
+    --gray-200: #e5e5e5;
+    --gray-100: #f5f5f5;
+    --gray-50: #fafafa;
+    --white: #fff;
+    --success: #10b981;
+    --warning: #f59e0b;
+    --error: #ef4444;
+    --info: #3b82f6;
+    --font: 'Archivo', sans-serif;
+    --mono: 'Space Mono', monospace;
+    --sidebar: 260px;
+    --navbar: 64px;
+}
+
+body {
+    font-family: var(--font);
+    background: var(--gray-50);
+    color: var(--black);
+    display: flex;
+    min-height: 100vh
+}
+
+/* ASP.NET form1 thay thế body làm flex container chính */
+#form1 {
+    display: flex;
+    min-height: 100vh;
+    width: 100%
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: var(--sidebar);
+    background: var(--black);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 100;
+    transition: transform 300ms
+}
+
+.sidebar-logo {
+    padding: 24px 24px 20px;
+    border-bottom: 1px solid rgba(255,255,255,.08);
+    font-size: 18px;
+    font-weight: 900;
+    letter-spacing: -.5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font)
+}
+
+    .sidebar-logo .lbadge {
+        background: var(--white);
+        color: var(--black);
+        font-size: 10px;
+        font-weight: 700;
+        padding: 2px 6px;
+        font-family: var(--mono)
+    }
+
+.sidebar-nav {
+    flex: 1;
+    padding: 16px 0;
+    overflow-y: auto
+}
+
+.nav-section {
+    padding: 12px 24px 6px;
+    font-size: 10px;
+    font-weight: 700;
+    color: rgba(255,255,255,.3);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-family: var(--mono)
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 11px 24px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: var(--font);
+    color: rgba(255,255,255,.6);
+    text-decoration: none;
+    position: relative;
+    transition: all 150ms
+}
+
+    .nav-item.active {
+        color: var(--white);
+        background: rgba(255,255,255,.1)
+    }
+
+    .nav-item:hover {
+        color: var(--white);
+        background: rgba(255,255,255,.06)
+    }
+
+    .nav-item.active::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 3px;
+        background: var(--white)
+    }
+
+.nav-icon {
+    width: 18px;
+    text-align: center;
+    font-size: 15px
+}
+
+.nav-badge {
+    margin-left: auto;
+    background: var(--white);
+    color: var(--black);
+    font-size: 10px;
+    font-weight: 700;
+    padding: 2px 6px;
+    font-family: var(--mono)
+}
+
+.sidebar-footer {
+    padding: 20px 24px;
+    border-top: 1px solid rgba(255,255,255,.08)
+}
+
+.user-mini {
+    display: flex;
+    align-items: center;
+    gap: 12px
+}
+
+.user-avatar {
+    width: 36px;
+    height: 36px;
+    background: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--black);
+    flex-shrink: 0
+}
+
+.user-name {
+    font-size: 13px;
+    font-weight: 600;
+    font-family: var(--font)
+}
+
+.user-role {
+    font-size: 11px;
+    color: rgba(255,255,255,.4);
+    font-family: var(--mono)
+}
+
+/* MAIN */
+.main {
+    margin-left: var(--sidebar);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh
+}
+
+/* TOPBAR */
+.topbar {
+    height: var(--navbar);
+    background: var(--white);
+    border-bottom: 1px solid var(--gray-200);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 32px;
+    position: sticky;
+    top: 0;
+    z-index: 50
+}
+
+.topbar-left {
+    display: flex;
+    align-items: center;
+    gap: 16px
+}
+
+.page-title {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -.3px;
+    font-family: var(--font)
+}
+
+.page-breadcrumb {
+    font-size: 12px;
+    color: var(--gray-500);
+    font-family: var(--mono)
+}
+
+.topbar-right {
+    display: flex;
+    align-items: center;
+    gap: 12px
+}
+
+.topbar-btn {
+    width: 36px;
+    height: 36px;
+    border: 1px solid var(--gray-200);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: var(--white);
+    font-size: 16px;
+    transition: all 200ms;
+    position: relative
+}
+
+    .topbar-btn:hover {
+        border-color: var(--black)
+    }
+
+.notif-dot {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    width: 6px;
+    height: 6px;
+    background: var(--error);
+    border-radius: 50%
+}
+
+/* BUTTONS — asp:Button render thành input[type=submit] */
+.btn-primary,
+input[type="submit"].btn-primary,
+input[type="button"].btn-primary {
+    background: var(--black);
+    color: var(--white);
+    border: none;
+    padding: 9px 18px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: var(--font);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 200ms;
+    white-space: nowrap;
+    text-decoration: none
+}
+
+    .btn-primary:hover,
+    input[type="submit"].btn-primary:hover {
+        opacity: .85
+    }
+
+.btn-outline-sm,
+input[type="submit"].btn-outline-sm,
+input[type="button"].btn-outline-sm {
+    background: var(--white);
+    color: var(--black);
+    border: 1.5px solid var(--gray-200);
+    padding: 8px 16px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: var(--font);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 150ms;
+    white-space: nowrap;
+    border-radius: 4px
+}
+
+    .btn-outline-sm:hover,
+    input[type="submit"].btn-outline-sm:hover {
+        border-color: var(--black)
+    }
+
+.btn-sm,
+a.btn-sm {
+    padding: 5px 12px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid var(--gray-200);
+    background: var(--white);
+    font-family: var(--font);
+    transition: all 150ms;
+    text-decoration: none;
+    color: var(--black);
+    display: inline-block;
+    border-radius: 4px
+}
+
+    .btn-sm:hover,
+    a.btn-sm:hover {
+        border-color: var(--black);
+        background: var(--gray-50)
+    }
+
+/* CONTENT */
+.content {
+    padding: 32px;
+    flex: 1
+}
+
+/* TABLE — asp:GridView render thành <table> */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: var(--font)
+}
+
+th {
+    padding: 12px 16px;
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--gray-500);
+    text-transform: uppercase;
+    letter-spacing: .8px;
+    text-align: left;
+    font-family: var(--mono);
+    background: var(--gray-50);
+    border-bottom: 1px solid var(--gray-200);
+    white-space: nowrap
+}
+
+td {
+    padding: 13px 16px;
+    font-size: 13px;
+    font-family: var(--font);
+    border-bottom: 1px solid var(--gray-100);
+    vertical-align: middle
+}
+
+tr:last-child td {
+    border-bottom: none
+}
+
+tr:hover td {
+    background: var(--gray-50)
+}
+
+/* TABLE CARD */
+.table-card {
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: 4px;
+    overflow: hidden
+}
+
+.table-header,
+.table-top {
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--gray-200);
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+    .table-header h3,
+    .table-top h3 {
+        font-size: 14px;
+        font-weight: 800;
+        letter-spacing: -.2px;
+        font-family: var(--font)
+    }
+
+.table-wrap {
+    overflow-x: auto
+}
+
+/* GridView Pager — trang hiện tại render thành <span>, trang khác là <a> */
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 14px 20px;
+    border-top: 1px solid var(--gray-200);
+    gap: 4px
+}
+
+    .pagination a,
+    .pagination span {
+        padding: 6px 12px;
+        border: 1.5px solid var(--gray-200);
+        font-size: 12px;
+        font-weight: 700;
+        cursor: pointer;
+        background: var(--white);
+        font-family: var(--mono);
+        text-decoration: none;
+        color: var(--black);
+        display: inline-block;
+        transition: all 150ms;
+        border-radius: 4px
+    }
+
+        .pagination a:hover {
+            background: var(--black);
+            color: var(--white);
+            border-color: var(--black)
+        }
+
+    .pagination span {
+        background: var(--black);
+        color: var(--white);
+        border-color: var(--black)
+    }
+
+/* BADGE */
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 700;
+    font-family: var(--mono)
+}
+
+.badge-open {
+    background: #dcfce7;
+    color: #15803d
+}
+
+.badge-closed,
+.badge-ended {
+    background: #fee2e2;
+    color: #dc2626
+}
+
+.badge-soon,
+.badge-upcoming {
+    background: #fef3c7;
+    color: #d97706
+}
+
+.badge-draft {
+    background: var(--gray-100);
+    color: var(--gray-600)
+}
+
+/* FORM FIELDS */
+.field {
+    margin-bottom: 20px
+}
+
+    .field:last-child {
+        margin-bottom: 0
+    }
+
+.field-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px
+}
+
+label {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    color: var(--gray-700);
+    font-family: var(--font)
+}
+
+    label .required {
+        color: var(--error);
+        margin-left: 2px
+    }
+
+/* asp:TextBox / asp:DropDownList */
+.fc,
+.fc input,
+.fc select,
+.fc textarea,
+input[type="text"].fc,
+input[type="email"].fc,
+input[type="number"].fc,
+input[type="date"].fc,
+input[type="time"].fc,
+input[type="password"].fc,
+select.fc,
+textarea.fc {
+    width: 100%;
+    padding: 11px 14px;
+    border: 1.5px solid var(--gray-200);
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: var(--font);
+    background: var(--white);
+    transition: border-color 200ms;
+    outline: none;
+    color: var(--black);
+    box-sizing: border-box
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus,
+input[type="password"]:focus,
+select:focus,
+textarea:focus {
+    border-color: var(--black);
+    box-shadow: 0 0 0 3px rgba(0,0,0,.05)
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: var(--gray-400)
+}
+
+textarea {
+    resize: vertical;
+    line-height: 1.6
+}
+
+select {
+    cursor: pointer
+}
+
+/* TOGGLE SWITCH — bọc ngoài asp:CheckBox */
+.toggle-switch {
+    position: relative;
+    width: 40px;
+    height: 22px;
+    cursor: pointer;
+    flex-shrink: 0;
+    display: inline-block
+}
+
+    .toggle-switch input[type="checkbox"],
+    .toggle-switch span input[type="checkbox"] {
+        opacity: 0;
+        width: 0;
+        height: 0;
+        position: absolute
+    }
+
+.toggle-track {
+    position: absolute;
+    inset: 0;
+    background: var(--gray-300);
+    border-radius: 22px;
+    transition: background .2s
+}
+
+.toggle-thumb {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 16px;
+    height: 16px;
+    background: var(--white);
+    border-radius: 50%;
+    transition: transform .2s;
+    box-shadow: 0 1px 3px rgba(0,0,0,.2)
+}
+
+.toggle-switch input[type="checkbox"]:checked ~ .toggle-track {
+    background: var(--black)
+}
+
+.toggle-switch input[type="checkbox"]:checked ~ .toggle-thumb {
+    transform: translateX(18px)
+}
+
+/* STATS */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    margin-bottom: 32px
+}
+
+.stat-card {
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    padding: 24px;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden
+}
+
+    .stat-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background: var(--black)
+    }
+
+    .stat-card.success::before {
+        background: var(--success)
+    }
+
+    .stat-card.warning::before {
+        background: var(--warning)
+    }
+
+    .stat-card.info::before {
+        background: var(--info)
+    }
+
+.stat-label {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--gray-500);
+    text-transform: uppercase;
+    letter-spacing: .8px;
+    margin-bottom: 12px;
+    font-family: var(--mono)
+}
+
+.stat-value {
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: -2px;
+    line-height: 1;
+    font-family: var(--font)
+}
+
+.stat-change {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 10px;
+    font-size: 12px
+}
+
+.change-up {
+    color: var(--success)
+}
+
+.change-down {
+    color: var(--error)
+}
+
+.stat-icon {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 28px;
+    opacity: .15
+}
+
+/* VALIDATION */
+.field-error {
+    color: var(--error);
+    font-size: 12px;
+    display: block;
+    margin-top: 4px;
+    font-family: var(--font)
+}
+
+.validation-summary {
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+    color: var(--error);
+    padding: 14px 18px;
+    border-radius: 4px;
+    font-size: 13px;
+    margin-bottom: 20px;
+    font-family: var(--font)
+}
+
+/* PROGRESS */
+.progress-bar {
+    height: 4px;
+    background: var(--gray-200);
+    border-radius: 2px;
+    overflow: hidden;
+    width: 80px
+}
+
+.progress-fill {
+    height: 100%;
+    background: var(--black);
+    border-radius: 2px
+}
+
+/* TOAST */
+.toast {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    background: var(--black);
+    color: var(--white);
+    padding: 12px 18px;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: var(--font);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transform: translateY(70px);
+    opacity: 0;
+    transition: all 280ms;
+    z-index: 9999;
+    border-left: 3px solid var(--success);
+    border-radius: 4px
+}
+
+    .toast.show {
+        transform: translateY(0);
+        opacity: 1
+    }
+
+/* MENU TOGGLE */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 4px;
+    color: var(--black)
+}
+
+/* RESPONSIVE */
+@media(max-width:1200px) {
+    .stats-grid {
+        grid-template-columns: repeat(2,1fr)
+    }
+}
+
+@media(max-width:900px) {
+    .sidebar {
+        transform: translateX(-100%)
+    }
+
+        .sidebar.open {
+            transform: translateX(0)
+        }
+
+    .main {
+        margin-left: 0 !important
+    }
+
+    .menu-toggle {
+        display: block
+    }
+}
+
+@media(max-width:600px) {
+    .stats-grid {
+        grid-template-columns: 1fr
+    }
+
+    .content {
+        padding: 20px
+    }
+
+    .topbar {
+        padding: 0 16px
+    }
+}

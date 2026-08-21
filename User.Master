@@ -1,0 +1,150 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="User.Master.cs" Inherits="QuanLySuKien.User" %>
+
+<!DOCTYPE html>
+<html lang="vi">
+<head runat="server">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+        <asp:ContentPlaceHolder ID="PageTitle" runat="server">EventHub</asp:ContentPlaceHolder>
+    </title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+
+    <!-- Shared Stylesheet -->
+    <link href="<%= ResolveUrl("~/Styles/User.css") %>" rel="stylesheet" />
+
+    <!-- Page-specific styles -->
+    <asp:ContentPlaceHolder ID="HeadStyles" runat="server" />
+</head>
+<body>
+    <form id="masterForm" runat="server">
+
+        <!-- ══════════════════════════════════
+             NAVBAR
+        ══════════════════════════════════ -->
+        <nav class="navbar">
+            <a class="nav-brand" href="<%= ResolveUrl("~/tUSER/UserTrangChu.aspx") %>">
+                <div class="nav-brand-dot"></div>
+                EventHub
+            </a>
+
+            <ul class="nav-links">
+                <li>
+                    <asp:HyperLink ID="lnkHome" runat="server"
+                        NavigateUrl="~/USER/UserTrangChu.aspx"
+                        CssClass="nav-link">Trang chủ</asp:HyperLink>
+                </li>
+                <li>
+                    <asp:HyperLink ID="lnkEvents" runat="server"
+                        NavigateUrl="~/USER/Events.aspx"
+                        CssClass="nav-link">Sự kiện</asp:HyperLink>
+                </li>
+                <li>
+                    <asp:HyperLink ID="lnkCalendar" runat="server"
+                        NavigateUrl="~/USER/Usercalendar.aspx"
+                        CssClass="nav-link">Lịch</asp:HyperLink>
+                </li>
+                <li>
+                    <asp:HyperLink ID="lnkProfile" runat="server"
+                        NavigateUrl="~/USER/UserProfile.aspx"
+                        CssClass="nav-link">Hồ sơ</asp:HyperLink>
+                </li>
+            </ul>
+
+            <div class="nav-right">
+                <!-- Notification Button -->
+                <div class="notif-btn" onclick="toggleNotif()">
+                    <span style="font-family: var(--mono); font-weight: 700; font-size: 13px; letter-spacing: 1px">Thông báo</span>
+                    <asp:Panel ID="pnlNotifBadge" runat="server" CssClass="notif-badge" Visible="false">
+                        <asp:Label ID="lblNotifBadge" runat="server" Text="0" />
+                    </asp:Panel>
+                </div>
+
+                <!-- User Pill -->
+                <a class="user-pill" href="<%= ResolveUrl("~/USER/UserProfile.aspx") %>">
+                    <div class="user-ava">
+                        <asp:Label ID="lblUserInitials" runat="server" Text="VA" />
+                    </div>
+                    <div class="user-pill-name">
+                        <asp:Label ID="lblUserName" runat="server" Text="Văn An" />
+                    </div>
+                </a>
+            </div>
+        </nav>
+
+        <!-- ══════════════════════════════════
+             ANNOUNCEMENT BAND (optional per page)
+        ══════════════════════════════════ -->
+        <asp:ContentPlaceHolder ID="AnnounceBand" runat="server" />
+
+        <!-- ══════════════════════════════════
+             HERO BAND (optional per page)
+        ══════════════════════════════════ -->
+        <asp:ContentPlaceHolder ID="HeroBand" runat="server" />
+
+        <!-- ══════════════════════════════════
+             MAIN CONTENT
+        ══════════════════════════════════ -->
+        <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+
+        <!-- ══════════════════════════════════
+             NOTIFICATION PANEL (slide-in)
+        ══════════════════════════════════ -->
+        <div class="notif-panel" id="notifPanel">
+            <div class="notif-panel-header">
+                <div class="notif-panel-title">Thông báo</div>
+                <button class="notif-panel-close" onclick="toggleNotif()" type="button">X</button>
+            </div>
+            <div class="notif-items">
+                <asp:Repeater ID="rptNotifications" runat="server">
+                    <ItemTemplate>
+                        <div class='notif-item <%# (bool)Eval("IsUnread") ? "unread" : "" %>'>
+                            <div class="notif-item-top">
+                                <div class="notif-item-title">
+                                    <%# (bool)Eval("IsUnread") ? "<span class=\"notif-unread-dot\"></span>" : "" %>
+                                    <%# Eval("Title") %>
+                                </div>
+                                <div class="notif-item-time"><%# Eval("TimeLabel") %></div>
+                            </div>
+                            <div class="notif-item-text"><%# Eval("Content") %></div>
+                        </div>
+                    </ItemTemplate>
+                </asp:Repeater>
+
+                <%-- Empty state khi khong co thong bao --%>
+                <asp:PlaceHolder ID="phDefaultNotifs" runat="server" Visible="false">
+                    <div style="padding: 40px 20px; text-align: center; color: var(--gray-500)">
+                        <div style="font-size: 32px; font-family: var(--mono); font-weight: 700; color: var(--gray-300); margin-bottom: 8px">TB</div>
+                        <div style="font-size: 13px">Khong co thong bao moi</div>
+                    </div>
+                </asp:PlaceHolder>
+            </div>
+        </div>
+
+        <!-- ══════════════════════════════════
+             TOAST
+        ══════════════════════════════════ -->
+        <div class="toast" id="toast">
+            <span>✓</span>
+            <span id="toastMsg"></span>
+        </div>
+
+        <!-- ══════════════════════════════════
+             FOOTER
+        ══════════════════════════════════ -->
+        <div class="site-footer">
+            <span>© 2026 EventHub · Internal Platform</span>
+            <span>v2.1.0 · Hệ thống quản lý sự kiện nội bộ</span>
+        </div>
+
+    </form>
+
+    <!-- Shared Scripts -->
+    <script src="<%= ResolveUrl("~/UserScrips/User.js") %>"></script>
+
+    <!-- Page-specific scripts -->
+    <asp:ContentPlaceHolder ID="PageScripts" runat="server" />
+</body>
+</html>

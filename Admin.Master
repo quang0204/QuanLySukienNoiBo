@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.Master.cs" Inherits="QuanLySuKien.Admin" %>
+
+<!DOCTYPE html>
+<html lang="vi" xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+        <asp:ContentPlaceHolder ID="TitleContent" runat="server">EventHub Admin</asp:ContentPlaceHolder>
+    </title>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="Content/AdminMasterPage.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server" />
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-logo">&#11041; EventHub <span class="lbadge">ADMIN</span></div>
+            <nav class="sidebar-nav">
+                <div class="nav-section">Tong quan</div>
+                <a class="nav-item" id="navDashboard" href="AdminDashboard.aspx"><span class="nav-icon">&#9638;</span> Dashboard</a>
+                <a class="nav-item" id="navCalendar" href="AdminCalendar.aspx"><span class="nav-icon">&#9643;</span> Lich su kien</a>
+                <div class="nav-section">Quan ly su kien</div>
+                <a class="nav-item" id="navEvents" href="AdminEvents.aspx"><span class="nav-icon">&#9672;</span> Su kien </a>
+                <a class="nav-item" id="navParticipants" href="AdminParticipants.aspx"><span class="nav-icon">&#9673;</span> Nguoi tham gia</a>
+                <a class="nav-item" id="navEventForm" href="AdminEventForm.aspx"><span class="nav-icon">&#8853;</span> Tao su kien</a>
+                <div class="nav-section">He thong</div>
+                <asp:LinkButton ID="btnLogout" runat="server" CssClass="nav-item" OnClick="btnLogout_Click" CausesValidation="false"> <span class="nav-icon">&#8867;</span> Dang xuat</asp:LinkButton>
+            </nav>
+            <div class="sidebar-footer">
+                <div class="user-mini">
+                    <div class="user-avatar">
+                        <asp:Label ID="lblUserAvatar" runat="server" Text="?" /></div>
+                    <div>
+                        <div class="user-name">
+                            <asp:Label ID="lblUserName" runat="server" Text="Guest" /></div>
+                        <div class="user-role">
+                            <asp:Label ID="lblUserRole" runat="server" Text="" /></div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+
+        <div class="toast" id="toastGlobal"></div>
+        <asp:ContentPlaceHolder ID="ScriptContent" runat="server" />
+        <script>
+            function showToast(msg) { var t = document.getElementById('toastGlobal'); t.innerHTML = '&#10003; ' + msg; t.classList.add('show'); setTimeout(function () { t.classList.remove('show'); }, 2500); }
+        </script>
+    </form>
+</body>
+</html>

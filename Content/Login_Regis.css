@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --black: #000;
+    --gray-800: #1e1e1e;
+    --gray-600: #404040;
+    --gray-500: #737373;
+    --gray-200: #e5e5e5;
+    --gray-100: #f5f5f5;
+    --white: #fff;
+    --green: #10b981;
+    --red: #ef4444;
+    --font: 'Archivo', sans-serif;
+}
+
+body {
+    font-family: var(--font);
+    background: var(--white);
+    min-height: 100vh;
+    display: flex;
+}
+
+/* ── Layout ─────────────────────── */
+.auth-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100vh;
+    width: 100%;
+}
+
+/* ── Hero (trái) ────────────────── */
+.auth-hero {
+    background: var(--black);
+    color: var(--white);
+    padding: 64px 56px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+
+    .auth-hero::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: repeating-linear-gradient(0deg,transparent,transparent 60px,rgba(255,255,255,.03) 60px,rgba(255,255,255,.03) 61px), repeating-linear-gradient(90deg,transparent,transparent 60px,rgba(255,255,255,.03) 60px,rgba(255,255,255,.03) 61px);
+    }
+
+#snowCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.auth-hero > *:not(canvas) {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-logo {
+    font-size: 22px;
+    font-weight: 900;
+    letter-spacing: -1px;
+}
+
+    .hero-logo span {
+        display: inline-block;
+        background: var(--white);
+        color: var(--black);
+        padding: 2px 8px;
+        margin-right: 4px;
+    }
+
+.hero-headline h2 {
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 1.1;
+    letter-spacing: -2px;
+    margin-bottom: 16px;
+}
+
+.hero-headline p {
+    font-size: 15px;
+    color: rgba(255,255,255,.6);
+    line-height: 1.7;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 14px;
+}
+
+.benefit-dot {
+    width: 7px;
+    height: 7px;
+    background: var(--white);
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.benefit-text {
+    font-size: 14px;
+    color: rgba(255,255,255,.7);
+}
+
+.hero-counter {
+    display: flex;
+    gap: 40px;
+    border-top: 1px solid rgba(255,255,255,.1);
+    padding-top: 28px;
+}
+
+.counter-item .number {
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: -1px;
+}
+
+.counter-item .label {
+    font-size: 12px;
+    color: rgba(255,255,255,.5);
+    margin-top: 2px;
+}
+
+/* ── Form (phải) ────────────────── */
+.auth-form-section {
+    background: var(--white);
+    padding: 64px 56px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-header {
+    margin-bottom: 32px;
+}
+
+.tab-switch {
+    display: inline-flex;
+    border: 1px solid var(--gray-200);
+    padding: 4px;
+    border-radius: 6px;
+    margin-bottom: 24px;
+}
+
+.tab-btn {
+    padding: 8px 24px;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    background: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: var(--font);
+    color: var(--gray-600);
+    transition: all 150ms;
+}
+
+    .tab-btn.active {
+        background: var(--black);
+        color: var(--white);
+    }
+
+.form-title {
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: -1px;
+    margin-bottom: 6px;
+}
+
+.form-subtitle {
+    font-size: 14px;
+    color: var(--gray-500);
+}
+
+/* ── Thông báo server ── */
+.msg-box {
+    display: block;
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.msg-error {
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+    color: var(--red);
+}
+
+.msg-success {
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    color: #15803d;
+}
+
+/* ── Fields ── */
+.field {
+    margin-bottom: 16px;
+}
+
+    .field label {
+        display: block;
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: .4px;
+        margin-bottom: 7px;
+        color: var(--gray-600);
+    }
+
+.asp-input {
+    width: 100%;
+    padding: 13px 15px;
+    border: 1.5px solid var(--gray-200);
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: var(--font);
+    background: var(--gray-100);
+    transition: border-color 150ms, box-shadow 150ms;
+    outline: none;
+    display: block;
+    color: var(--black);
+}
+
+    .asp-input:focus {
+        border-color: var(--black);
+        background: var(--white);
+        box-shadow: 0 0 0 3px rgba(0,0,0,.07);
+    }
+
+.two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+/* Hiện / ẩn theo tab */
+.register-only {
+    display: none !important;
+}
+
+.register-active .register-only {
+    display: block !important;
+}
+
+.register-active .two-col.register-only {
+    display: grid !important;
+}
+
+.register-active .login-only {
+    display: none !important;
+}
+
+.forgot-link {
+    display: block;
+    text-align: right;
+    font-size: 13px;
+    color: var(--gray-500);
+    text-decoration: none;
+    margin: -8px 0 20px;
+}
+
+    .forgot-link:hover {
+        color: var(--black);
+    }
+
+/* ── Nút submit (asp:Button → input[type=submit]) ── */
+.btn-submit {
+    width: 100%;
+    padding: 15px;
+    background: var(--black);
+    color: var(--white);
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: var(--font);
+    transition: background 150ms, transform 100ms;
+    display: block;
+}
+
+    .btn-submit:hover {
+        background: var(--gray-800);
+    }
+
+    .btn-submit:active {
+        transform: scale(.98);
+    }
+
+/* ── Footer ── */
+.form-footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 13px;
+    color: var(--gray-500);
+}
+
+    .form-footer a {
+        color: var(--black);
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+/* ── Toast ── */
+.toast {
+    position: fixed;
+    top: 24px;
+    right: 24px;
+    background: var(--black);
+    color: var(--white);
+    padding: 14px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: transform 300ms, opacity 300ms;
+    z-index: 9999;
+    box-shadow: 0 8px 24px rgba(0,0,0,.2);
+}
+
+    .toast.show {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+.toast-dot {
+    width: 7px;
+    height: 7px;
+    background: var(--green);
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+@media(max-width:900px) {
+    .auth-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .auth-hero {
+        display: none;
+    }
+
+    .auth-form-section {
+        padding: 48px 28px;
+    }
+}
+
+/* Thông báo server */
+.msg-box {
+    display: block;
+    padding: 12px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    line-height: 1.5;
+}
+
+.msg-error {
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+    color: #dc2626;
+}
+
+.msg-success {
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    color: #16a34a;
+}

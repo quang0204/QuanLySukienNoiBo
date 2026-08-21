@@ -1,0 +1,158 @@
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\Quản Lý Sự Kiện.dll.config
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\Quản Lý Sự Kiện.dll
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\Quản Lý Sự Kiện.pdb
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\csc.exe
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\csc.exe.config
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\csc.rsp
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\csi.exe
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\csi.exe.config
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\csi.rsp
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\System.AppContext.dll
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\System.Collections.Immutable.dll
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\System.Console.dll
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\System.Globalization.Calendars.dll
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\System.IO.Compression.dll
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\System.IO.FileSystem.dll
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\System.Net.Http.dll
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\System.Net.Sockets.dll
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\System.Reflection.Metadata.dll
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\System.ValueTuple.dll
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\System.Xml.XPath.dll
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\vbc.exe
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\vbc.exe.config
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\vbc.rsp
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\VBCSCompiler.exe
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\VBCSCompiler.exe.config
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\Antlr3.Runtime.dll
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\AspNet.ScriptManager.bootstrap.dll
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\AspNet.ScriptManager.jQuery.dll
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\Microsoft.AspNet.FriendlyUrls.dll
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\Microsoft.ScriptManager.MSAjax.dll
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\Microsoft.ScriptManager.WebForms.dll
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\Microsoft.Web.Infrastructure.dll
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\Newtonsoft.Json.dll
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\System.Web.Optimization.dll
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\WebGrease.dll
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\System.Web.Optimization.xml
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\Newtonsoft.Json.xml
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\Antlr3.Runtime.pdb
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\Microsoft.AspNet.FriendlyUrls.xml
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\obj\Debug\Quản Lý Sự Kiện.csproj.CoreCompileInputs.cache
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\obj\Debug\Quản Lý Sự Kiện.csproj.CopyComplete
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\obj\Debug\Quản Lý Sự Kiện.dll
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\obj\Debug\Quản Lý Sự Kiện.pdb
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\obj\Debug\Quản Lý Sự Kiện.csproj.AssemblyReference.cache
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\Content\AdminCalendar.css
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\EntityFramework.dll
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\EntityFramework.SqlServer.dll
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\EntityFramework.xml
+D:\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\EntityFramework.SqlServer.xml
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\Content\AdminCalendar.css
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\Quản Lý Sự Kiện.dll.config
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\Quản Lý Sự Kiện.dll
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\Quản Lý Sự Kiện.pdb
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\csc.exe
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\csc.exe.config
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\csc.rsp
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\csi.exe
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\csi.exe.config
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\csi.rsp
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\Microsoft.Managed.Core.targets
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\System.AppContext.dll
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\System.Collections.Immutable.dll
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\System.Console.dll
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\System.Globalization.Calendars.dll
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\System.IO.Compression.dll
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\System.IO.FileSystem.dll
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\System.Net.Http.dll
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\System.Net.Sockets.dll
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\System.Reflection.Metadata.dll
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\System.ValueTuple.dll
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\System.Xml.XmlDocument.dll
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\System.Xml.XPath.dll
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\vbc.exe
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\vbc.exe.config
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\vbc.rsp
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\VBCSCompiler.exe
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\roslyn\VBCSCompiler.exe.config
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\Antlr3.Runtime.dll
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\AspNet.ScriptManager.bootstrap.dll
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\AspNet.ScriptManager.jQuery.dll
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\EntityFramework.dll
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\EntityFramework.SqlServer.dll
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\Microsoft.ScriptManager.WebForms.dll
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\Microsoft.Web.Infrastructure.dll
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\Newtonsoft.Json.dll
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\System.Web.Optimization.dll
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\WebGrease.dll
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\EntityFramework.xml
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\EntityFramework.SqlServer.xml
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\System.Web.Optimization.xml
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\Newtonsoft.Json.xml
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\Antlr3.Runtime.pdb
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\obj\Debug\Quản Lý Sự Kiện.csproj.AssemblyReference.cache
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\obj\Debug\Quản Lý Sự Kiện.csproj.CoreCompileInputs.cache
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\obj\Debug\Quản Lý Sự Kiện.csproj.CopyComplete
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\obj\Debug\Quản Lý Sự Kiện.dll
+C:\BaiTapLon\Quản Lý Sự Kiện\Quản Lý Sự Kiện\obj\Debug\Quản Lý Sự Kiện.pdb
